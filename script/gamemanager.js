@@ -15,7 +15,7 @@
  * SOFTWARE.
  * *****************************************************************************/
 
-
+// game loop; recalculate positions, collisions, etc
 
 (function () {
   
