@@ -16,11 +16,10 @@
  * *****************************************************************************/
  
  
- ECS.Components.Sprite = (function() {
+ ECS.Components.Position = (function() {
    
    return {
-     visible: true,
-     image: undefined,
-     inView: true, // used to control when rendering is ok to skip; turn false when far enough from player
+     x: 0,
+     y: 0,
    };
  })();

@@ -15,8 +15,14 @@
  * SOFTWARE.
  * *****************************************************************************/
  
- // HP, sprite, etc
- ECS.Components.WeaponSkills = (function WeaponSkills() {
+
+ // this is for the game to know which entities are the player or enemy characters
+ // and whether they should interact with the player's presence, etc
+ ECS.Components.GameCharacter = function GameCharacter() {
    
-   return {};
- })();
+   return {
+     health: 0,
+     // other stuff relevant to game characters
+     // such as a Sprite component, or a Position component
+   };
+ };

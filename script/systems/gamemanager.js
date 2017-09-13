@@ -16,6 +16,10 @@
  * *****************************************************************************/
 
 // game loop; recalculate positions, collisions, etc
+// put collision checking on a subsystem if necessary
+// gamemanager has references to the arrays containing entity data and can be globally visible
+
+// activate the level up checker system every 10 frames or so, instead of every frame?
 
 (function () {
   

@@ -15,7 +15,18 @@
  * SOFTWARE.
  * *****************************************************************************/
 
-
+OAA.Constants = {
+  DEBUG: true, // TODO: turn off
+  FPS: 60,
+  IMAGE_PATH: "img/",
+  SOUND_PATH: "sound/",
+  MUSIC_PATH: "sound/",
+  
+  characterXPCalculation: function(level, experienceCurve) {
+    var levelModifier = 10;
+    return parseInt((Math.pow(level, 2.12) * levelModifier + (100 - levelModifier)) * experienceCurve);
+  },
+};
 
 (function () {
   

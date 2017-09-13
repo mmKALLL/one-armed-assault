@@ -15,7 +15,7 @@
  * SOFTWARE.
  * *****************************************************************************/
 
-
+// rendering.js goes through objects with "visible" component, and draws them
 
 (function () {
   

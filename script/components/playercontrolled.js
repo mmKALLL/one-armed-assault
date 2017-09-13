@@ -16,7 +16,7 @@
  * *****************************************************************************/
  
  
- ECS.Components.WeaponSkills = (function WeaponSkills() {
+ ECS.Components.WeaponSkills = function WeaponSkills() {
    
    return {};
- })();
+ };

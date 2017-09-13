@@ -16,7 +16,11 @@
  * *****************************************************************************/
  
  
- ECS.Components.WeaponSkills = (function WeaponSkills() {
+ ECS.Components.GainLevels = function GainLevels(initialLevel, experienceCurveModifier, initialExperience) {
+   this.level = initialLevel || 1;
+   this.experienceCurve = experienceCurveModifier || 1.0;
+   this.XP = initialExperience || 0;
+   this.neededXP = OAA.Constants.characterXPCalculation(this.level, this.experienceCurve);
    
-   return {};
- })();
+   return this;
+ };

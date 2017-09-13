@@ -13,14 +13,15 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- * *****************************************************************************/
+ * ****************************************************************************/
  
+/* The levelupchecker is similar to healthchecker.
+   It is a system goes through every entity with "gainlevels" component, then
+   checks if their XP is higher than XP needed. If it is, the entity gains a
+   has its XP decreased, gains a level, and the system notifies the rendering
+   system to show a visual effect around the character.
+ */
  
- ECS.Components.Sprite = (function() {
-   
-   return {
-     visible: true,
-     image: undefined,
-     inView: true, // used to control when rendering is ok to skip; turn false when far enough from player
-   };
- })();
+ // calculate new xp with OAA.Constants.neededXPCalculation(this.level, this.experienceCurve);
+ 
+ // also check for Player's weapon skills

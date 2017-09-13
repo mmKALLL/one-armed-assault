@@ -15,12 +15,5 @@
  * SOFTWARE.
  * *****************************************************************************/
  
- 
- ECS.Components.Sprite = (function() {
-   
-   return {
-     visible: true,
-     image: undefined,
-     inView: true, // used to control when rendering is ok to skip; turn false when far enough from player
-   };
- })();
+ // The healthchecker system goes through every entity with "character" component, then checks if their HP is zero
+ // If it is, kill the character off.
